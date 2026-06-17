@@ -1,148 +1,81 @@
-```html
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mountain Bikes kaufen | BikeWorld</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mountain Bikes kaufen</title>
 
-    <!-- Google Tag später hier einfügen -->
+  <!-- Google Tag kommt später hier rein -->
 
-    <style>
-        body{
-            margin:0;
-            font-family:Arial,sans-serif;
-            background:#f5f5f5;
-            color:#333;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
+      background: #111;
+    }
 
-        .hero{
-            background:url('https://images.unsplash.com/photo-1559348349-86f1f65817fe?auto=format&fit=crop&w=1600&q=80') center/cover;
-            height:80vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            text-align:center;
-            color:white;
-        }
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+      url("https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?auto=format&fit=crop&w=1600&q=80");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 30px;
+    }
 
-        .hero-content{
-            background:rgba(0,0,0,0.6);
-            padding:40px;
-            border-radius:10px;
-        }
+    .box {
+      max-width: 800px;
+      background: rgba(0,0,0,0.55);
+      padding: 45px;
+      border-radius: 18px;
+    }
 
-        h1{
-            font-size:52px;
-            margin-bottom:10px;
-        }
+    h1 {
+      font-size: 56px;
+      margin: 0 0 20px;
+    }
 
-        .button{
-            display:inline-block;
-            background:#2e7d32;
-            color:white;
-            padding:15px 30px;
-            text-decoration:none;
-            border-radius:5px;
-            margin-top:20px;
-            font-weight:bold;
-        }
+    p {
+      font-size: 22px;
+      line-height: 1.5;
+    }
 
-        .container{
-            max-width:1200px;
-            margin:auto;
-            padding:50px 20px;
-        }
+    .button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 16px 34px;
+      background: #3fa34d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+    }
 
-        .cards{
-            display:grid;
-            grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-            gap:20px;
-        }
-
-        .card{
-            background:white;
-            padding:20px;
-            border-radius:10px;
-            text-align:center;
-            box-shadow:0 2px 10px rgba(0,0,0,0.1);
-        }
-
-        .card img{
-            width:100%;
-            border-radius:10px;
-        }
-
-        .price{
-            color:#2e7d32;
-            font-size:24px;
-            font-weight:bold;
-        }
-
-        footer{
-            background:#222;
-            color:white;
-            text-align:center;
-            padding:30px;
-        }
-    </style>
+    .button:hover {
+      background: #2f873b;
+    }
+  </style>
 </head>
 
 <body>
 
-<section class="hero">
-    <div class="hero-content">
-        <h1>Finde dein perfektes Mountain Bike</h1>
-        <p>Top Marken, starke Angebote und maximale Performance auf jedem Trail</p>
-        <a href="#angebote" class="button">Jetzt Angebote entdecken</a>
+  <section class="hero">
+    <div class="box">
+      <h1>Mountain Bikes für jedes Gelände</h1>
+      <p>
+        Entdecke starke Mountain Bikes für Waldwege, Trails und anspruchsvolle Touren.
+        Robust, sportlich und bereit für dein nächstes Abenteuer.
+      </p>
+      <a href="bikes.html" class="button">Mountain Bikes ansehen</a>
     </div>
-</section>
-
-<section class="container" id="angebote">
-    <h2>Unsere Bestseller</h2>
-
-    <div class="cards">
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1541625602330-2277a4c46182?auto=format&fit=crop&w=800&q=80">
-            <h3>Trail Pro X1</h3>
-            <p>Perfekt für Einsteiger und Fortgeschrittene.</p>
-            <div class="price">999 €</div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80">
-            <h3>Mountain Elite</h3>
-            <p>Leicht, robust und für jedes Gelände geeignet.</p>
-            <div class="price">1.499 €</div>
-        </div>
-
-        <div class="card">
-            <img src="https://images.unsplash.com/photo-1507035895480-2b3156c31fc8?auto=format&fit=crop&w=800&q=80">
-            <h3>Carbon Race Pro</h3>
-            <p>Maximale Performance für anspruchsvolle Fahrer.</p>
-            <div class="price">2.499 €</div>
-        </div>
-
-    </div>
-</section>
-
-<section class="container">
-    <h2>Warum BikeWorld?</h2>
-
-    <ul>
-        <li>✓ Kostenloser Versand</li>
-        <li>✓ 30 Tage Rückgaberecht</li>
-        <li>✓ Persönliche Beratung</li>
-        <li>✓ Über 1.000 Bikes auf Lager</li>
-    </ul>
-
- <a href="bikes.html" class="button">Jetzt kaufen</a>
-</section>
-
-<footer>
-    © 2026 BikeWorld | Mountain Bikes online kaufen
-</footer>
+  </section>
 
 </body>
 </html>
