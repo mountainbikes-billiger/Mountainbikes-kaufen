@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unsere Mountain Bikes</title>
+  <title>Mountain Bikes Übersicht | TrailCore Bikes</title>
 
   <!-- Google Tag kommt später hier rein -->
 
@@ -12,78 +11,93 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f1f4f1;
+      background: #f3f5f1;
       color: #222;
     }
 
     header {
-      background: #173b24;
+      background:
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+        url("https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=1800&q=80");
+      background-size: cover;
+      background-position: center;
       color: white;
       text-align: center;
-      padding: 55px 20px;
+      padding: 90px 20px;
     }
 
     header h1 {
-      font-size: 42px;
-      margin: 0 0 10px;
+      font-size: 54px;
+      margin: 0 0 15px;
     }
 
     header p {
-      font-size: 19px;
+      font-size: 20px;
       margin: 0;
     }
 
     .container {
-      max-width: 1150px;
-      margin: 45px auto;
+      max-width: 1200px;
+      margin: 50px auto;
       padding: 0 20px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 28px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
     }
 
     .card {
       background: white;
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.14);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
     }
 
     .card img {
       width: 100%;
-      height: 230px;
+      height: 250px;
       object-fit: cover;
     }
 
     .content {
-      padding: 22px;
+      padding: 24px;
     }
 
     h2 {
-      margin-top: 0;
       color: #173b24;
+      margin-top: 0;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #e5f5e8;
+      color: #267a35;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 12px;
     }
 
     ul {
+      line-height: 1.8;
       padding-left: 20px;
-      line-height: 1.7;
     }
 
     .price {
-      font-size: 26px;
-      font-weight: bold;
+      font-size: 30px;
       color: #2e7d32;
-      margin-top: 18px;
+      font-weight: bold;
+      margin-top: 20px;
     }
 
     footer {
-      text-align: center;
-      background: #222;
+      background: #111;
       color: white;
-      padding: 25px;
+      text-align: center;
+      padding: 30px;
       margin-top: 50px;
     }
   </style>
@@ -93,63 +107,63 @@
 
 <header>
   <h1>Unsere Mountain Bikes</h1>
-  <p>Wähle dein Bike für Trails, Berge und jedes Gelände</p>
+  <p>Starke Bikes für Trails, Waldwege und sportliche Abenteuer</p>
 </header>
 
 <main class="container">
-
   <div class="grid">
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike im Gelände">
+      <img src="https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike auf Trail">
       <div class="content">
-        <h2>Trail Rider 27</h2>
-        <p>Solides Mountain Bike für Einsteiger und Freizeitfahrer.</p>
+        <span class="badge">Einsteiger</span>
+        <h2>TrailCore Hardtail 27</h2>
+        <p>Robustes Mountain Bike für Einsteiger und entspannte Geländetouren.</p>
         <ul>
-          <li>27,5 Zoll Reifen</li>
+          <li>27,5 Zoll Laufräder</li>
+          <li>Aluminiumrahmen</li>
           <li>Hydraulische Scheibenbremsen</li>
-          <li>Robuster Aluminiumrahmen</li>
         </ul>
         <div class="price">899 €</div>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike auf Trail">
+      <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike in den Bergen">
       <div class="content">
-        <h2>Mountain Pro 29</h2>
-        <p>Sportliches Bike für längere Touren und anspruchsvolle Wege.</p>
+        <span class="badge">Allrounder</span>
+        <h2>TrailCore All Mountain 29</h2>
+        <p>Für sportliche Fahrer, die lange Touren und schwieriges Gelände lieben.</p>
         <ul>
           <li>29 Zoll Laufräder</li>
           <li>12 Gang Schaltung</li>
           <li>Luftfedergabel</li>
         </ul>
-        <div class="price">1.499 €</div>
+        <div class="price">1.599 €</div>
       </div>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1605721911519-3dfeb3be25e7?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike in den Bergen">
+      <img src="https://images.unsplash.com/photo-1544191696-15693072e89a?auto=format&fit=crop&w=900&q=80" alt="Mountain Bike im Gelände">
       <div class="content">
-        <h2>Enduro Carbon X</h2>
-        <p>Leichtes Performance Bike für schnelle Trails und Berge.</p>
+        <span class="badge">Performance</span>
+        <h2>TrailCore Enduro Pro</h2>
+        <p>Leistungsstarkes Fully für schnelle Abfahrten und anspruchsvolle Trails.</p>
         <ul>
           <li>Carbonrahmen</li>
-          <li>Premium Federung</li>
-          <li>Starke Scheibenbremsen</li>
+          <li>Vollfederung</li>
+          <li>Premium Scheibenbremsen</li>
         </ul>
-        <div class="price">2.699 €</div>
+        <div class="price">2.799 €</div>
       </div>
     </div>
 
   </div>
-
 </main>
 
 <footer>
-  © 2026 BikeWorld
+  © 2026 TrailCore Bikes
 </footer>
 
 </body>
 </html>
-```
